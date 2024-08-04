@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 9</title>
+
+    <script src="https://kit.fontawesome.com/2c9b151953.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://use.typekit.net/agz4obk.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-primary p-0 py-lg-0">
+            <div class="container-fluid">
+                <div class="container-toggler-logo">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand bg-primary p-0 ml-auto">
+                        <picture>
+                            <source srcset="img/logo-web.svg"                                        
+                            media="(min-width: 992px)">
+
+                            <source srcset="img/logo-smallest.svg"                                        
+                            media="(min-width: 200px)">
+
+                            <img class="orig-img" src="img/logo-smallest.svg" alt="833 Studio Logo">
+                        </picture>
+                    </a>       
+                </div> <!-- end of container-toggler-logo -->
+
+                <div class="offcanvas offcanvas-start" tabindex="0" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarContent">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-secondary" id="offcanvasNavbarContent">833 Studios</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-0">
+                            <li class="nav-item btn btn-primary px-3 rounded-1">
+                                <a class="nav-link px-5 py-2.5 focus-ring" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item btn btn-primary px-3 rounded-1 mx-0 mx-lg-1">
+                                <a class="nav-link px-5 py-2.5 focus-ring" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item btn btn-primary px-3 rounded-1 mx-0 mx-lg-1">
+                                <a class="nav-link px-5 py-2.5 focus-ring" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item btn btn-primary px-3 rounded-1">
+                                <a class="nav-link px-5 py-2.5 focus-ring" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of offcanvas-body container -->
+                </div> <!-- end of offcanvas offcanvas-start container -->
+                
+                
+                <div class="btn-group" role="group" aria-label="Social media buttons">
+                    <a class="btn" href="https://github.com/mart1254" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a class="btn" href="https://www.linkedin.com/in/dominic-martin-992322150/" target="_blank"><i class="fa-brands fa-linkedin">
+                    </i></a>
+                    <a class="btn" href="https://codepen.io/mart1254" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                </div> <!-- end of btn-group -->
+            </div> <!-- end of container-fluid -->
+        </nav>
+        <ul class="skip-links">
+            <li><a href="#section-welcome">Skip to Welcome section</a></li>
+            <li><a href="#bit-about-me">Skip to A Bit About Me section</a></li>
+            <li><a href="#some-projects">Skip to Some Projects section</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- <section id="section-welcome">
+            <div id="banner-home"> 
+                <div class="container">
+                    <h1 class="text-primary mb-5">This page is a Work-in-process</h1>
+                    <h2 class="text-primary">Come back after the summer break</h2>
+                    <div class="welcome-content d-flex justify-content-center flex-column flex-md-row">
+                    </div>
+                   
+                </div>
+            </div>
+        </section> -->
+
+        <section id="section-portfolio-piece">
+            <div id="section-pokemon-profile">
+                <div class="card-profile">
+                    <div class="container-profile-img">
+                        <img class="profile-caught-icon" src="img/poke-ball.png" alt="">
+                        <img src="img/video-facet.png" alt="" class="profile-img">
+                    </div>
+                    <div class="profile-content-spacing">
+                        <div class="container-profile-info">
+                            <div class="container-profile-middle">
+                                <div class="container-name-index-profile-btns">
+                                    <div class="container-name-index">
+                                        <h1>Video Assignment</h1>
+                                        <!-- <h2>0038</h2> -->
+                                    </div>
+                                    <div class="container-profile-btn">
+                                        <a href="#" class="type-one">Camera Work</a>
+                                        <!-- <a href="#" class="type-two">Type 2</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-content-spacing">
+                        <div class="profile-description">
+                            <h3>Description</h3>
+                            <p>For this project, I worked to create a video between 1 minute 30 seconds and 3 minutes in length. I created a video where my subject (me) tries to fall asleep but wakes up to the sound of a faucet dripping water and can't go back to sleep. The video required careful attention to quality, including exposure, white balance, framing, focus, and movement, with the option to incorporate stylistic choices like desaturated elements and color shifts. This creative video featured a voiceover and music, incorporating various post-production techniques such as color correction and balanced audio. I conducted production meetings, and created detailed pitch decks outlining my production design, schedule, story, mood, and team organization. The final video was uploaded to YouTube.</p>
+                            <a class="button-primary button-one mt-auto" href="https://youtu.be/N-X8x7hruio?si=VzwJGCbxEDM1J19z" role="button" target="_blank">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container-fluid bg-secondary py-4 py-lg-5">
+                <h2 class="text-primary">Gallery</h2>
+            </div>
+            <div class="container portfolio-piece">
+                <div id="project-nine-gallery-container" class="container-grid-two project-gallery-styles">
+                    
+                </div> 
+            </div> 
+            <div id="modal-gallery" class="modal">
+                
+            </div> -->
+        </section>
+
+        <div class="container-back-button">
+            <a class="button-primary button-one" href="portfolio.html">Back</a>
+        </div>
+
+        <footer class="bg-secondary">
+            <div class="container">
+                <a class="" href="#">Back to Top</a>
+                <p class="text-start ms-2">&copy; Copyright 833 Studios, 2023</p>
+                <!--  -->
+            </div>
+            <script type='application/ld+json'>
+                {
+                  "@context": "http://www.schema.org",
+                  "@type": "person",
+                  "name": "Dominic Ty Martin",
+                  "jobTitle": "Freelancer",
+                  "url": "http://833studios.com/",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1155 Parkway Drive",
+                    "addressLocality": "Ottawa",
+                    "addressRegion": "Ontario",
+                    "postalCode": "K2C2W1",
+                    "addressCountry": "Canada"
+                  },
+                  "email": "ty.d0mm@gmail.com",
+                  "telephone": "+1(613) 868-4009",
+                  "birthDate": "2000-09-03"
+                }
+                 </script>
+            <script type='application/ld+json'>
+                    {
+                      "@context": "http://www.schema.org",
+                      "@type": "WebSite",
+                      "name": "833 Studios",
+                      "alternateName": "833Studios",
+                      "url": "https://mart1254.github.io/portfolio/"
+                    }
+                     </script>
+        </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+</body>
+
+
+</html>

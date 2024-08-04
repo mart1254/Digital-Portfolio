@@ -1,0 +1,1080 @@
+
+/* My styles */
+
+:root {
+    --violetColor: #724CF9;
+    --footerContentColor: #B8A7F6;
+    --bs-indigo: 114,76,249;
+    /* --bs-body-color: #F2F2F2; */
+    /* --bs-body-color-rgb: 242,242,242; */
+    --bs-body-bg: #E6E6E6;
+    --bs-body-bg-rgb: 230,230,230;
+    --bs-primary: #E6A82D;
+    --bs-primary-rgb: 230,168,45;
+    --bs-secondary: #000001;
+    --bs-secondary-rgb: 0,0,1;
+    --bs-dark: #222222;
+    --bs-dark-rgb: 34,34,34;
+    --bs-tertiary-color: #222222;
+    --bs-tertiary-color-rgb: 34,34,34;
+    --bs-focus-ring-color: rgba(var(--bs-indigo), 1);
+}
+
+h1 {
+    font-family: ff-cocon-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-family: objektiv-mk1, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+
+
+/* Allows button text to be visable */
+a {
+  position: relative;
+  z-index: 99;
+}
+
+/* Primary CSS button */
+
+.button-primary {
+  position: relative;
+  text-decoration: none;
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: bold;
+  padding: 13px 25px;
+  transition: ease-in 250ms;
+  color: var(--bs-secondary);
+}
+
+.button-one {
+  /* color:#724CF9; */
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button-one::before {
+  content: '';
+  display: block;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background: var(--bs-secondary);
+  transform-origin: left;
+  transition: ease-in 250ms;
+  z-index: -1;
+}
+
+.button-one::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: var(--bs-primary);
+  z-index: -2;
+}
+
+.button-one:hover {
+  color: var(--bs-primary);
+}
+
+.button-one:hover::before {
+  height: 100%;
+}
+
+
+/* Secondary CSS button */
+
+.button-two {
+  /* color:#724CF9; */
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button-two::before {
+  content: '';
+  display: block;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background: var(--bs-secondary);
+  transform-origin: left;
+  transition: ease-in 250ms;
+  z-index: -1;
+}
+
+.button-two::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: var(--bs-body-bg);
+  z-index: -2;
+}
+
+.button-two:hover {
+  color: var(--bs-primary);
+}
+
+.button-two:hover::before {
+  height: 100%;
+}
+
+
+/* Tertiary CSS button */
+.button-three {
+  /* color:#724CF9; */
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button-three::before {
+  content: '';
+  display: block;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background: var(--bs-primary);
+  transform-origin: left;
+  transition: ease-in 250ms;
+  z-index: -1;
+}
+
+.button-three::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: var(--bs-body-bg);
+  z-index: -2;
+}
+
+.button-three:hover {
+  color: var(--bs-secondary);
+}
+
+.button-three:hover::before {
+  height: 100%;
+}
+
+
+
+
+/* ========================================================= Skip links styles ====================================================== */
+
+.skip-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -8rem;
+  /* background-color: var(--bs-secondary); */
+  background-color: #724CF9;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  z-index: 9;
+}
+
+.skip-links a:focus {
+  top: 8rem;
+}
+
+
+/* ========================================================= Nav styles =========================================================== */
+
+.btn:focus, a:focus, button:focus {
+    outline: 4px dashed #724CF9;
+  }
+
+nav .btn-group .btn {
+  color:#000001;
+
+}
+
+nav .btn-group .btn:hover {
+  color: var(--violetColor);
+}
+
+nav .btn-group i {
+  font-size: 2.3rem;
+}
+
+nav .btn-primary {
+    background-color: var(--bs-tertiary-color);
+    border: var(--bs-tertiary-color);
+    
+}
+
+nav .btn-primary:hover, nav .btn-primary:focus, nav .btn-primary:active, nav .btn-primary.active {
+    /* color: var(--bs-tertiary-color) !important; */
+    background-color: var(--bs-primary-color) !important;
+    border: 0.5px solid var(--bs-tertiary-color);
+}
+
+nav .navbar-nav a, nav .navbar-nav a:focus {
+  color: var(--bs-primary);
+}
+
+nav .navbar-nav a:hover {
+  color: var(--bs-secondary);
+}
+
+
+
+
+/* ========================================================= Welcome styles ==========================================================*/
+
+
+
+#banner-home {
+  padding-top: 8rem;
+  min-height: 100vh;
+  background-image: url("../img/main-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#banner-home h2 {
+  margin-bottom: 8rem;
+}
+
+
+
+h1 {
+  text-align: center;
+}
+
+
+.welcome-content .button-primary {
+  margin-bottom: 1rem;
+}
+
+.welcome-content {
+  margin: 0 auto;
+  width: 100%;
+  flex: 0 0 230px;
+}
+
+
+
+/* ========================================================= Bit About Me styles =====================================================*/
+
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+#bit-about-me .row {
+  margin: 0 auto;
+}
+
+
+#bit-about-me {
+  background-color: var(--bs-body-bg);
+}
+
+
+/* ========================================================= Some of My Projects styles ==============================================*/
+
+
+#some-projects .card {
+  max-width: 22rem;
+  margin: 0 auto;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#some-projects .primary-button {
+  width: 100%;
+}
+
+
+
+/* =====================================================================================================================================
+                                                            About Page                                                                
+======================================================================================================================================*/
+
+#about-body {
+  background-color: var(--bs-dark);
+}
+
+
+/* ========================================================= Intro styles ============================================================*/
+
+#banner-about {
+  padding-top: 8rem;
+  min-height: 70vh;
+  height: 31rem;
+  /* height: 500px; */
+  background-image: url("../img/main-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+
+/* ========================================================= About me styles =========================================================*/
+
+/* About me section */
+
+#about-me {
+  background-color: var(--bs-tertiary-color);
+  position: relative;
+  height: 65rem;
+
+}
+
+#about-me .container {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: white; */
+  /* padding: 20px; */
+  padding-bottom: 2rem;
+  z-index: 2;
+  width: 85%;
+
+}
+
+/* Skills section */
+
+.skills i {
+    font-size: 3rem;
+  }
+
+  .skills i:nth-child(7) {
+    margin-left: 0.5rem;
+  }
+
+  .skills i:nth-child(5) {
+    margin-left: 0.2rem;
+
+  }
+
+  .v-line {
+    border-left: 2px solid black;
+    height: 2.5rem;
+    margin-left: 1.8rem;
+  }
+
+  .skills p {
+    margin-bottom: 0rem;
+  }
+
+  /* Past web projects section */
+
+  #past-web-projects {
+    background-color: var(--bs-secondary);
+  }
+
+  #past-web-projects i {
+    font-size: 6rem;
+    color: var(--bs-primary);
+  }
+
+
+  
+/* =====================================================================================================================================
+                                                            Contact Page                                                                
+======================================================================================================================================*/
+
+#contact-body {
+  background-color: var(--bs-secondary);
+}
+
+/* ========================================================= Section help styles =====================================================*/
+
+#banner-contact {
+  padding-top: 8rem;
+  min-height: 30vh;
+  background-image: url("../img/main-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Section contact */
+
+#fullName, #emailInfo, #phoneNumber, #comments {
+  border-color: var(--bs-secondary);
+}
+
+
+
+/* ========================================================= Section resume styles ===================================================*/
+
+#section-resume i {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+#section-resume .button-primary {
+  max-width: 100%;
+
+}
+
+
+
+
+/* ========================================================= Footer styles ===========================================================*/
+
+
+footer .container {
+  padding: 5px 0px 5px 0px;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer a, footer p {
+  color: var(--footerContentColor);
+}
+
+
+
+
+
+
+
+
+
+
+/* ================================================= Projects Page */
+
+.container {
+  margin: 0 auto;
+}
+
+#gallery-container {
+  margin: 1.5rem;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* grid-auto-rows: 21rem; */
+}
+
+.img-frame {
+  background-color: var(--bs-primary);
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  /* font-size: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.img-frame img {
+  width: 100%;
+}
+
+#gallery-container .img-frame:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 23px 0 rgba(0,0,0,0.5);
+}
+
+/*  */
+
+.project-gallery-styles .img-frame:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 23px 0 rgba(0,0,0,0.5);
+}
+
+.category-badge {
+  color: var(--bs-primary);
+  background-color: var(--bs-secondary);
+  text-decoration: none;
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.img-frame .button-two {
+  display: block;
+  width: 100%;
+}
+
+.project-gallery-styles {
+  margin: 1.5rem;
+}
+
+
+/* ================================================= Project (Individual) Page */
+
+.type-one, .type-two {
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #7ec219;
+  padding: 5px 15px;
+  border-radius: 9px;
+  color: #000001;
+}
+
+.type-one {
+  margin-right: 0.4rem;
+}
+
+/* #section-portfolio-piece {
+  background-color: var(--bs-primary);
+} */
+
+#section-portfolio-piece .button-one {
+  display: block;
+}
+
+.container-back-button {
+  width: 50%;
+  margin: 3rem auto;
+}
+
+.container-back-button .button-one {
+  display: block;
+
+}
+
+#section-pokemon-profile {
+  margin-bottom: 3rem;
+  background-color: #4A5252;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.card-profile {
+  margin-top: 64px;
+  background-color: #d7d7d7;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.container-profile-img {
+  background-color: #399cff00;
+  width: 100%;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.profile-caught-icon {
+  position: absolute; 
+  top: 45px; 
+  width: 17%;  
+}
+
+.profile-img {
+  width: 100%;
+  display: block;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.profile-content-spacing {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.card-profile .profile-content-spacing:nth-child(2) {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.container-profile-middle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #000001;
+}
+
+.container-name-index-profile-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-name-index {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.container-name-index h1 {
+  /* font-size: 2rem; */
+  margin-right: 0.8rem;
+}
+
+.container-name-index h2 {
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 500;
+  /* font-size: 1.3rem;     */
+}
+
+.container-profile-btn > .type-one{
+  color: var(--bs-primary);
+  background-color: var(--bs-secondary);
+}
+
+
+.container-profile-btn > .type-two {
+  background-color: var(--bs-primary);
+}
+
+.container-profile-switch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-profile-switch > .switch {
+  margin-bottom: 1rem;
+}
+
+.container-profile-switch > p {
+  margin-left: 0;
+}
+
+.profile-description {
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5; 
+  margin-bottom: 1.5rem;
+}
+
+.profile-description h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.container-back-button {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.back-btn { 
+  font-family: objektiv-mk1, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color:#EE3032;
+  padding: 5px 10%;
+  border-radius: 9px;
+  color: #000001;
+}
+
+.portfolio-piece {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+.container-grid-one {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.container-grid-two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+
+/* modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  
+  /* width: calc(100% - 50px); */
+  /* height: calc(100% - 50px); */
+  padding: 25px;
+  
+  background-color: rgba(18, 15, 15, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .img-frame {
+  width: 93%;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* =====================================================================================================================================
+                                                           Media Queries                                                                
+======================================================================================================================================*/
+
+
+/* ====================================================== Media queries small mobile =================================================*/
+
+/* @media screen and (min-width: 300px) {
+
+
+} */
+
+/* ==================================================== Media Query tablet styles ====================================================*/
+                
+@media screen and (min-width: 768px) {
+  
+  #bit-about-me h3 {
+    text-align: left;
+    margin-left: 12px;
+  }
+
+
+/* =====================================================================================================================================
+                                                            About Page                                                                
+======================================================================================================================================*/
+
+  #banner-about {
+    min-height: 65vh;
+  }
+
+  #about-me {
+    height: 57rem;
+  }
+
+
+  #about-me .container {
+    bottom: 0%;
+    padding-bottom: 2rem;
+  }
+
+
+  #past-web-projects i {
+    font-size: 8rem;
+  }
+
+
+  /* ================================================= Project (Individual) Page */
+
+  .more-btn { 
+    font-size: 1rem;
+    padding: 10px 10%;
+    border-radius: 9px;
+}
+
+.back-btn { 
+    font-size: 1rem;
+    padding: 10px 10%;
+    border-radius: 9px;
+}
+
+
+.card-profile h1 {
+    /* font-size: 2.5rem; */
+}
+
+.card-profile h2 {
+    /* font-size: 1.6rem; */
+}
+
+.card-profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container-profile-img {
+    width: 50%;
+}
+
+.profile-caught-icon {
+    width: 9%;  
+}
+
+.card-profile .profile-content-spacing {
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
+.card-profile .profile-content-spacing:nth-child(2) {
+    padding: 1rem 1rem;
+    width: 50%;
+    border-bottom: 1px solid #000001;
+}
+
+.container-profile {
+    width: 100%;
+}
+
+.container-profile-middle {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: none;
+}
+
+.container-name-index-profile-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 8rem;
+}
+
+/* Keep width: 50% or else h2 shifts all the way to the right - something to do with the flex-direction of the the
+container-profile-middle container but h2 is nested in a div with h1  */
+.container-name-index {
+    margin-bottom: 2.5rem;
+    /* width: 50%; */
+}
+
+.container-profile-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Made buttons inline and not block so they can be used with flex */
+.container-profile-btn .type-one, .container-profile-btn .type-two {
+    display: inline;
+    padding: 8px 15px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* removed flex becasue it did nothing */
+.container-profile-switch {
+    margin: 0 auto;
+}
+
+
+
+} /* End of @media query tablet*/
+
+
+/* ==================================================== Media Query web styles =======================================================*/
+                                                
+@media screen and (min-width: 992px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.25rem;
+  }
+  
+  body {
+    /* background-color: var(--bs-primary); */
+  }
+
+  nav .btn-group i {
+    font-size: 3.5rem;
+  }
+
+
+  #banner-home {
+    padding-top: 12rem;
+  }
+
+  #bit-about-me {
+    background-color: var(--bs-primary);
+  }
+
+  #some-projects .card {
+    max-width: 36rem;
+  }
+
+  #some-projects .col {
+    background-color: var(--bs-tertiary-color);
+  }
+
+
+/* =====================================================================================================================================
+                                                            About Page                                                                
+======================================================================================================================================*/
+
+  #banner-about {
+    padding-top: 12rem;
+  }
+
+  #about-me {
+    background-color: var(--bs-body-bg);
+    height: 45rem;
+  }
+
+  #banner-about {
+    min-height: 45vh;
+    height: 25rem;
+  }
+
+
+  #about-me .container {
+    position: static;
+    bottom: 0%;
+    left: 0%;
+    transform: translateX(0%);
+    padding: 20px;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .skills i {
+    font-size: 3rem;
+  }
+
+  .skills i:nth-child(7) {
+    margin-left: 0.5rem;
+  }
+
+  .skills i:nth-child(5) {
+    margin-left: 0.2rem;
+
+  }
+
+  .v-line {
+    border-left: 2px solid black;
+    /* height: 2.7rem; */
+    height: 2.5rem;
+    margin-left: 1.8rem;
+  }
+
+
+  #past-web-projects {
+    background-color: var(--bs-dark);
+  }
+
+  #past-web-projects i {
+    font-size: 27rem;
+  }
+
+
+
+  
+  footer .container {
+    padding: 25px 0px 25px 0px;
+  }
+
+
+ /* ================================================= Project (Individual) Page */
+
+  .card-profile h1 {
+    /* font-size: 3rem; */
+}
+
+.card-profile h2 {
+    /* font-size: 2rem; */
+}
+
+/* Resests .card-profile from flex */
+.card-profile {
+    margin-top: 110px;
+    display: block;
+}
+
+.card-profile {
+    display: grid;
+    gap: 0px 50px;
+    padding-right: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "img info"
+    "img desc"
+    ;
+}
+
+.container-profile-img {
+    grid-area: img;
+    width: 100%;
+}
+
+.card-profile .profile-content-spacing {
+    grid-area: desc;
+    width: 100%;
+}
+
+.card-profile .profile-content-spacing:nth-child(2) {
+    grid-area: info;
+    width: 100%;
+}
+
+.profile-caught-icon {
+    width: 6%;
+}
+
+.container-name-index {
+    margin-top: 3rem;
+}
+
+.container-profile-btn {
+    justify-content: left;
+}
+
+.container-profile-btn .type-one {
+    margin-right: 1.5rem;
+}
+
+.container-profile-btn .type-one, .container-profile-btn .type-two {
+    flex-grow: 0;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    text-align: center;
+    flex-basis: 150px
+}
+
+.container-profile-switch {
+    margin: 0 0;
+}
+
+
+
+} /* End of @media query web */
+
