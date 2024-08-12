@@ -12,7 +12,7 @@ const $galleryContainer = document.getElementById('gallery-container')
 
 const projects = [
     {
-        "projectImg": "../img/pokedex-img-profile.png",
+        "projectImg": "img/pokedex-img-profile.png",
         "altText": "Project 1",
         "projectTitle": "Pokedex Web Application Project",
         "projectLink": "portfolio-piece.html",
@@ -119,21 +119,21 @@ if($galleryContainer){
 
 // const projects = [
 //     {
-//         "projectImg": "../img/photography-354_x_354.jpg",
+//         "projectImg": "img/photography-354_x_354.jpg",
 //         "altText": "Red 1957 Chevy Bel Air",
 //         "projectTitle": "Project 1",
 //         "projectLink": "https://www.youtube.com/watch?v=KdcbhPWpPLc&list=PLupfNVOTJaHwJ5dUw_HmcTTx8QCp2-b8Z",
 //         "projectCategory": "Photography"
 //     },
 //     {
-//         "projectImg": "../img/photography-354_x_354.jpg",
+//         "projectImg": "img/photography-354_x_354.jpg",
 //         "altText": "Red 1957 Chevy Bel Air",
 //         "projectTitle": "Project 1",
 //         "projectLink": "https://www.youtube.com/watch?v=KdcbhPWpPLc&list=PLupfNVOTJaHwJ5dUw_HmcTTx8QCp2-b8Z",
 //         "projectCategory": "Photography"
 //     },
 //     {
-//         "projectImg": "../img/photography-354_x_354.jpg",
+//         "projectImg": "img/photography-354_x_354.jpg",
 //         "altText": "Red 1957 Chevy Bel Air",
 //         "projectTitle": "Project 1",
 //         "projectLink": "https://www.youtube.com/watch?v=KdcbhPWpPLc&list=PLupfNVOTJaHwJ5dUw_HmcTTx8QCp2-b8Z",
@@ -175,38 +175,38 @@ const $projectOneGalleryContainer = document.getElementById('project-one-gallery
 // cars array which holds car objects
 const cars = [
     {
-        "carImgSmall": "../img/lo-fi-pokedex_mobile.png",
-        "carImgBig": "../img/lo-fi-pokedex_mobile.png",
+        "carImgSmall": "img/lo-fi-pokedex_mobile.png",
+        "carImgBig": "img/lo-fi-pokedex_mobile.png",
         "altText": "lo-fi pokedex mobile",
         "dataSource": "Uploaded by Dominic"
     },
     {
-        "carImgSmall": "../img/lo-fi-pokedex_tablet.png",
-        "carImgBig": "../img/lo-fi-pokedex_tablet.png",
+        "carImgSmall": "img/lo-fi-pokedex_tablet.png",
+        "carImgBig": "img/lo-fi-pokedex_tablet.png",
         "altText": "lo-fi pokedex tablet",
         "dataSource": "Uploaded by Dominic"
     },
     {
-        "carImgSmall": "../img/lo-fi-pokedex_desktop.png",
-        "carImgBig": "../img/lo-fi-pokedex_desktop.png",
+        "carImgSmall": "img/lo-fi-pokedex_desktop.png",
+        "carImgBig": "img/lo-fi-pokedex_desktop.png",
         "altText": "lo-fi pokedex desktop",
         "dataSource": "Uploaded by Dominic"
     },
     {
-        "carImgSmall": "../img/hi-fi-pokedex_mobile.png",
-        "carImgBig": "../img/hi-fi-pokedex_mobile.png",
+        "carImgSmall": "img/hi-fi-pokedex_mobile.png",
+        "carImgBig": "img/hi-fi-pokedex_mobile.png",
         "altText": "hi-fi pokedex mobile",
         "dataSource": "Uploaded by Dominic"
     },
     {
-        "carImgSmall": "../img/hi-fi-pokedex_tablet.png",
-        "carImgBig": "../img/hi-fi-pokedex_tablet.png",
+        "carImgSmall": "img/hi-fi-pokedex_tablet.png",
+        "carImgBig": "img/hi-fi-pokedex_tablet.png",
         "altText": "hi-fi pokedex tablet",
         "dataSource": "Uploaded by Dominic"
     },
     {
-        "carImgSmall": "../img/hi-fi-pokedex_desktop.png",
-        "carImgBig": "../img/hi-fi-pokedex_desktop.png",
+        "carImgSmall": "img/hi-fi-pokedex_desktop.png",
+        "carImgBig": "img/hi-fi-pokedex_desktop.png",
         "altText": "hi-fi pokedex desktop",
         "dataSource": "Uploaded by Dominic"
     },
@@ -286,14 +286,14 @@ const $projectTwoGalleryContainer = document.getElementById('project-two-gallery
 // cars array which holds car objects
 const cars2 = [
     {
-        "carImgSmall": "../img/custome-css-framework.png",
-        "carImgBig": "../img/custome-css-framework.png",
+        "carImgSmall": "img/custome-css-framework.png",
+        "carImgBig": "img/custome-css-framework.png",
         "altText": "Visual example of Companion Framework",
         "dataSource": "Uploaded by Dominic"
     },
     {
-        "carImgSmall": "../img/companion-framework_small.png",
-        "carImgBig": "../img/companion-framework_big.png",
+        "carImgSmall": "img/companion-framework_small.png",
+        "carImgBig": "img/companion-framework_big.png",
         "altText": "Companion Framework",
         "dataSource": "Uploaded by Dominic"
     },

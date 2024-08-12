@@ -747,9 +747,13 @@ footer a, footer p {
 }
 
 .modal .img-frame {
-  width: 93%;
+  width: 65vh;
   margin: 0 auto;
 }
+
+/* .modal-small .img-frame {
+  width: 40%;
+} */
 
 
 
